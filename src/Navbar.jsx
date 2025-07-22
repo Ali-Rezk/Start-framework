@@ -22,7 +22,7 @@ export default function Navbar() {
       className="navbar navbar-expand-lg bg-indigo py-4 fixed-top"
     >
       <div className="container">
-        <Link className="navbar-brand text-white" to="/">
+        <Link className="navbar-brand text-white fs-2" to="/">
           Start Framework
         </Link>
         <button
@@ -40,17 +40,30 @@ export default function Navbar() {
           className="collapse navbar-collapse ms-auto"
           id="navbarNavAltMarkup"
         >
-          <div className="navbar-nav">
-            <NavLink className="nav-link me-3" aria-current="page" to="/about">
-              About
-            </NavLink>
-            <NavLink className="nav-link me-3" to="/portfolio">
-              Portfolio
-            </NavLink>
-            <NavLink className="nav-link me-3" to="contact">
-              Contact
-            </NavLink>
-          </div>
+          <ul className="navbar-nav">
+            <li className="me-3 mt-3 mt-md-0">
+              <NavLink
+                className="nav-link text-uppercase px-2"
+                aria-current="page"
+                to="/about"
+              >
+                About
+              </NavLink>
+            </li>
+            <li className="me-3 mt-3 mt-md-0">
+              <NavLink
+                className="nav-link text-uppercase px-2 "
+                to="/portfolio"
+              >
+                Portfolio
+              </NavLink>
+            </li>
+            <li className="me-3 mt-3 mt-md-0">
+              <NavLink className="nav-link text-uppercase px-2 " to="contact">
+                Contact
+              </NavLink>
+            </li>
+          </ul>
         </div>
       </div>
     </nav>

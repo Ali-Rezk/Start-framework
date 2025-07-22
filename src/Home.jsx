@@ -3,8 +3,8 @@ import img from "./assets/avataaars.svg";
 
 export default function Home() {
   return (
-    <div className="home d-flex justify-content-center align-items-center text-white">
-      <div className="text-center space-top">
+    <div className="home d-flex justify-content-center align-items-center text-white space-top">
+      <div className="text-center ">
         <img
           src={img}
           alt="a drawing of a boy smiling"

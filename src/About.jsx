@@ -2,8 +2,8 @@ import React from "react";
 
 export default function About() {
   return (
-    <div className="about d-flex justify-content-center align-items-center py-5">
-      <div className="space-top">
+    <div className="about d-flex justify-content-center align-items-center py-5 space-top">
+      <div>
         <div className="text-center pt-4">
           <h2 className="text-uppercase mb-3 fs-1 fw-bolder">
             about component
