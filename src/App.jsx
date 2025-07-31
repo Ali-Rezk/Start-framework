@@ -16,7 +16,12 @@ function App() {
         { path: "/about", element: <About></About> },
         { path: "/contact", element: <Contact></Contact> },
         { path: "/portfolio", element: <Portfolio></Portfolio> },
-        { path: "/portfolio", element: <h2>Not found</h2> },
+        {
+          path: "*",
+          element: (
+            <h2 className="space-top text-black text-center py-5">Not found</h2>
+          ),
+        },
       ],
     },
   ]);
